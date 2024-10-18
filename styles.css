@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ededed;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+h1 span {
+    font-weight: bold;
+    font-size: 96px;
+}
+
+header {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background: url("./images/georgia_background.jpg") center;
+}
+
+.navbar {
+    min-height: 50px;
+    width: 100%;
+}
+
+.navbar-items {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+    padding: 18px;
+    background: rgba(127, 127, 127, 0.5);
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.5s;
+}
+
+.navbar-items a:hover {
+    color: #000000;
+}
+
+.georgia-bg {
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 48px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 5px solid #ffffff;
+    border-radius: 25px;
+    background: rgba(127,127,127,0.5);
+}
+
+.georgia-bg h2 {
+    margin: 40px;
+    font-size: clamp(24px, 48px, 48px);
+    width: 600px;
+}
+
+.about-georgia {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 48px;
+    text-align: center;
+}
+
+.testimonial {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+}
+
+.testimonial-card {
+    width: 20%;
+    background-color: white;
+    border-radius: 32px;
+    padding: 24px;
+    text-align: center;
+    line-height: 1.5;
+    filter: drop-shadow(1px 1px 2px #b6afaf);
+}
+
+.testimonial-card p {
+    min-height: 150px;
+}
+
+.testimonial-card img {
+    max-width: 100%;
+    height: auto;
+    width: 128px;
+    filter: drop-shadow(2px 2px 3px #b6afaf);
+}
+
+.testimonial-card button {
+    width: 150px;
+    padding: 4px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    margin-bottom: 12px;
+    border: 2px solid #000000;
+    font-size: 16px;
+}
+
+.testimonial-card button:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+    transition: color, background-color 0.8s;
+}
+
+.testimonial-card span {
+    text-transform: uppercase;
+    color: #b6afaf;
+}
+
+.default-margin {
+    height: 50px;
+    display: block;
+}
+
+.gallery-georgia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    margin-top: 100px;
+}
+
+.gallery-georgia img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(2px 2px 3px #b6afaf);
+}
+
+.activities-goergia {
+    text-align: center;
+}
+
+.activity-icons-goergia {
+    font-size: 64px;
+}
+
+.activities-goergia i {
+    margin-right: 60px;
+}
+
+.contact-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.contact {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -20%;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: #333;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border: 1px solid transparent;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.contact-background {
+    height: 100vh;
+    width: 100vw;
+    background: url("./images/footer_background.jpg") no-repeat center;
+}
+
+footer {
+    background-color: rgba(127, 127, 127);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #000000;
+    transition: color 0.5s;
+}
+
+.social-links i {
+    margin: 20px 10px;
+}
+
+.social-links i:hover {
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+@media (max-width: 767px) {
+    .navbar-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .georgia-bg h2 {
+        display: none;
+    }
+    .contact-container {
+        width: 90%;
+    }
+    .contact {
+        position: sticky;
+        width: unset;
+        top: unset;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-georgia p {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial-card {
+        width: 80%;
+        border-radius: 32px;
+    }
+    .testimonial-card p {
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery-georgia {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
